@@ -182,50 +182,7 @@
 				</section>
 				
 				<section>
-					<h1>1. Liberen al zoom</h1>
-				</section>
-
-				<section>
-					<h2>maximum-scale=1</h2>
-					<pre><code data-trim>
-&lt;meta name="viewport"
-      content="width=device-width,initial-scale=1,maximum-scale=1">
-					</code></pre>
-				</section>
-				
-				<section>
-					<h2>153 millones de personas<br>(2006)</h2>
-				</section>
-				
-				<section>
-					<h2>Entre 30% y 60% de adultos sufren de astigmatismo</h2>
-				</section>
-				
-				<section>
-					<h2><del>maximum-scale=1</del></h2>
-					<pre><code data-trim>
-&lt;meta name="viewport"
-      content="width=device-width,initial-scale=1">
-					</code></pre>
-				</section>
-				
-				<section>
-					<h1>2. Alts</h1>
-					<img src="img/mouse.gif" alt="Scene from Mean Girls">
-				</section>
-
-				<section class="left">
-					<h2>Textos alternativos</h2>
-					<ul>
-						<li class="fragment">Es obligatorio tenerlo</li>
-						<li class="fragment">... pero no completarlo</li>
-						<li class="fragment">No empieces con <em>"Imagen de"</em></li>
-						<li class="fragment">A veces la función es más importante que el contenido</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h1>3. Mark-up</h1>
+					<h1>Mark-up</h1>
 				</section>
 				
 				<section class="left">
@@ -302,7 +259,6 @@
 					<a href="https://w3c.github.io/using-aria/#aria-roles" target="_blank" rel="noopener">Roles en ARIA</a>
 				</section>
 				
-				<!--
 				<section class="incomplete left">
 					<h2>Etiquetas neutrales con roles</h2>
 					<ul>
@@ -317,111 +273,8 @@
 					<h2>Debemos generar la interactividad</h2>
 					aria attributes
 				</section>
-				-->
 				
-				<section>
-					<h1>4. Mostrar / Ocultar elementos</h1>
-				</section>
-
-				<section class="left">
-					<h2>¿A quién se lo queres ocultar?</h2>
-					<ul>
-						<li>Al usuario "común"</li>
-						<li>Al usuario de SR</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Ocultar al usuario "común"</h2>
-					<pre><code data-trim>
-.sr-only{
-	border: 0;
-	clip: rect(0 0 0 0);
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-	height: 1px;
-}
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Ocultar al usuario de SR</h2>
-					<pre><code data-trim class="html">
-&lt;el aria-hidden="true">...&lt;/el>
-					</code></pre>
-				</section>
-
-				<section>
-					<h1>5. Skip to content</h1>
-				</section>
 				
-				<section>
-					<h2>Skip to content</h2>
-					<pre><code data-trim class="html">
-&lt;a class="skip" href="#content">Skip to main content&lt;/a>
-
-&lt;!-- Menú Principal, logo y otros elementos del sitio -->
-
-&lt;main id="content">
-	Tu super contenido
-&lt;/main>
-					</code></pre>
-				</section>
-
-				<section class="left">
-					<h2>Skip to content</h2>
-					<ul>
-						<li>Invisible</li>
-						<li>Visual (focus)</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Invisible</h2>
-					<pre><code data-trim>
-.skip{
-	border: 0;
-	clip: rect(0 0 0 0);
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-	height: 1px;
-}
-					</code></pre>
-				</section>
-				
-				<section>
-					<h2>Visual</h2>
-					<pre><code data-trim>
-.skip {
-  position: absolute;
-  top: -40px;
-  left: 1em;
-  z-index: 1;
-  color: transparent;
-}
-
-.skip:focus {
-  position: absolute;
-  top: 0;
-  color: black;
-}
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Skip to content - Visual</h2>
-					<a href="http://www.sarasoueidan.com/" target="_blank" rel="noopener">
-						<img src="img/skip1.png" alt="Sara Soueidan's website, example of skip navigation">
-					</a>
-				</section>
-
-
 
 
 

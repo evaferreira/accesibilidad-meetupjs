@@ -1475,12 +1475,9 @@ body {
  *********************************************/
 
 .main{
-	height: 50vh;
-	background-size: 100% 100%;
-	background-color: beige;
-
-	h1.title{
-		margin-top: 9vh;
+	h1.title.title{
+		margin-top: 7vh;
+		text-transform: capitalize;
 	}
 	img.main_img.main_img{
 		max-height: 260px;
