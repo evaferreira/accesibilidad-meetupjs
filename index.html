@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>La Accesibilidad de todos los días</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code
+			vs, idea or routeros
+		-->
+		<link rel="stylesheet" href="lib/css/vs.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="main white">
+					<h1 class="title">La Accesibilidad de todos los días</h1>
+					<h2 class="subtitle">Eva Ferreira - <a href="https://twitter.com/evaferreira92">@evaferreira92</a></h2>
+				</section>
+
+				<section class="left">
+					<h2><span class="light">María</span> Eva<span class="light">ngelina</span> Ferreira <span class="light">Kuzminski</span></h2>
+					<ul>
+						<li>UI Developer at <a href="https://aerolab.co/" target="_blank">Aerolab</a></li>
+						<li><a href="http://cssconfar.com">CSSConf Argentina</a> Team</li>
+						<li>Docente en UTN BA desde 2012</li>
+					</ul>
+				</section>
+
+				<section class="left">
+					<h2>Itinerario</h2>
+					<ol>
+						<li class="fragment">¿Qué es accesibilidad?</li>
+						<li class="fragment">¿Cómo podemos ayudar?</li>
+					</ol>
+				</section>
+
+				<section class="white" data-background-color="#ff7b00">
+					<h1>¿Qué es accesibilidad?</h1>
+					<p>A11y</p>
+					<!-- Numerónimo (en inglés: numeronym), W3C, i18n, R2D2 -->
+				</section>
+
+				<section>
+					<blockquote>"La accesibilidad es el derecho de cada usuario a navegar y comprender los sitios web que diseñamos."</blockquote>
+				</section>
+
+				<section>
+					<h2>Accesibilidad &nbsp; <span class="red">!==</span> &nbsp; No videntes</h2>
+				</section>
+
+				<section>
+					<h2>Discapacidades</h2>
+					<p>Categorizar por tipo o duración</p>
+				</section>
+
+				<section class="left">
+					<h2>Tipo</h2>
+					<ul>
+						<li>Visuales</li>
+						<li>Motrices</li>
+						<li>Cognitivas</li>
+						<li>Auditivas</li>
+						<li>Cinestosis<sup class="sup-height fragment" aria-hidden="fragment">*</sup></li>
+					</ul>
+				</section>
+
+				<section class="left">
+					<h2>Duración</h2>
+					<ul>
+						<li class="fragment">Situacional</li>
+						<!--
+							Gato
+							Comer mientras tipeas?
+						-->
+						<li class="fragment">Temporal</li>
+						<li class="fragment">Definitiva</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Beneficios para todos</h2>
+					<img class="fragment" src="img/keyboard.png" alt="Tweet: 'Everybody is a keyboard user when eating with their mouse hand'">
+					<!-- Navegación por teclado -->
+					<!-- Performance -->
+					<!-- Código más ordenado -->
+					<!-- Tercera edad / Gente joven queveborroso. -->	
+					<!-- Subtítulos -->	
+					<!-- Ética, RSE -->	
+				</section>
+				
+				<section class="white" data-background-color="#ff7b00">
+					<h1>¿Cómo podemos ayudar?</h1>
+					<p>3 pasos</p>
+				</section>
+				
+				<section class="left">
+					<h1>1. Hacer ruido</h1>
+				</section>
+				
+				<section class="left">
+					<h1>2. Ayudar en Twitter</h1>
+				</section>
+				
+				<section>
+					<h2>Agregar textos alternativos</h2>
+					<img src="img/twitter-settings.png" alt="Panel de configuración de Twitter, sección accesibilidad">
+				</section>
+
+				<section>
+					<img src="img/twitter-settings2.png" alt="Panel de configuración de la app de Twitter, sección accesibilidad">
+				</section>
+				
+				<section>
+					<h2>Agregar textos alternativos</h2>
+					<img src="img/indio.jpg" alt="">
+					<em class="fragment alt-text">"Gato macho tricolor durmiendo al sol"</em>
+				</section>
+				
+				<section>
+					<h2>Agregar textos alternativos</h2>
+					<img src="img/sami.png" alt="">
+					<em class="fragment alt-text">"Gata gris y blanca, la hermana"</em>
+				</section>
+				
+				<section>
+					<h2>Agregar textos alternativos</h2>
+					<img src="img/agregando-twitter.png" alt="Interfaz de twitter al momento de crear un tweet con imagen, se puede notar el campo opcional de 'Add description'.">
+				</section>
+				
+				<section>
+					<img class="img-big" src="img/great.gif" alt="'Great!' Mean Girls scene">
+				</section>
+				
+				<section>
+					<img class="img-big" src="img/dumbledore-approves.gif" alt="Dubledore happy, approving">
+				</section>
+				
+				<section class="left">
+					<h1>3. Trabajando</h1>
+					<ul>
+						<li class="fragment">Diseño</li>
+						<li class="fragment">Desarrollo</li>
+						<li class="fragment">Audit</li>
+						<li class="fragment">Testing</li>
+					</ul>
+				</section>
+				
+				<section class="left">
+					<h2>Siglas</h2>
+					<ul>
+						<li><strong>AT</strong>: Assistive Technology</li>
+						<li><strong>SR</strong>: Screen Reader</li>
+						<li><strong>ARIA</strong>: Accessible Rich Internet Applications</li>
+					</ul>
+				</section>
+
+				<section class="white" data-background-color="#ff7b00">
+					<h1>Estándar WCAG 2.1</h1>
+					<p><a href="https://www.w3.org/TR/WCAG21/" target="_blank">The Web Content Accessibility Guidelines de W3C</a></p>
+				</section>
+
+				<section class="white" data-background-color="#ff7b00">
+					<h2>Diseño</h2>
+				</section>
+
+				<section>
+					<h2>Contraste</h2>
+				</section>
+
+				<section>
+					<h2>Contrast Ratio de Lea Verou</h2>
+					<a target="_blank" rel="noopener" href="http://leaverou.github.io/contrast-ratio"><img src="img/contrast2.png" alt="Contrast Ratio website de Lea Verou"></a>
+					<!-- Dos formulas matemáticas para comparar el brillo y la diferencia de colores -->
+				</section>
+				
+				<section class="left">
+					<h2>Valores ideales</h2>
+					<ul>
+						<li>Normal Text (18px ~ 14px)
+							<ul>
+								<li>4.5</li>
+							</ul>
+						</li>
+						<li>Large Text (+ 18px)
+							<ul>
+								<li>3</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Gris más claro aceptable sobre blanco</h2>
+					<a href="http://leaverou.github.io/contrast-ratio/#%23888888-on-white"><img src="img/contrast3.png" alt="Sitio de contraste, mostrando el gris más claro que se puede usar sobre blanco: #888"></a>
+				</section>
+
+				<section>
+					<h2>Daltonismo</h2>
+				</section>
+
+				<section><img src="img/color-blindness-1.png" alt="Formulario notando falla en el sistema al ser el usuario color blind"></section>
+				
+				<section><img src="img/color-blindness-2.png" alt="Formulario arreglando falla en el sistema con íconos y texto"></section>
+
+
+
+
+
+				<section class="white" data-background-color="#ff7b00">
+					<h2>Desarrollo</h2>
+				</section>
+				
+				<section>
+					<img class="img-big" src="img/shopping.gif" alt="Mean Girls scene 'We are going coding'!">
+				</section>
+				
+				<section>
+					<h1>1. Liberen al zoom</h1>
+				</section>
+
+				<section>
+					<h2>maximum-scale=1</h2>
+					<pre><code data-trim>
+&lt;meta name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1">
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>153 millones de personas<br>(2006)</h2>
+				</section>
+				
+				<section>
+					<h2>Entre 30% y 60% de adultos sufren de astigmatismo</h2>
+				</section>
+				
+				<section>
+					<h2><del>maximum-scale=1</del></h2>
+					<pre><code data-trim>
+&lt;meta name="viewport"
+      content="width=device-width,initial-scale=1">
+					</code></pre>
+				</section>
+				
+				<section>
+					<h1>2. Alts</h1>
+					<img src="img/mouse.gif" alt="Scene from Mean Girls">
+				</section>
+
+				<section class="left">
+					<h2>Textos alternativos</h2>
+					<ul>
+						<li class="fragment">Es obligatorio tenerlo</li>
+						<li class="fragment">... pero no completarlo</li>
+						<li class="fragment">No empieces con <em>"Imagen de"</em></li>
+						<li class="fragment">A veces la función es más importante que el contenido</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h1>3. Mark-up</h1>
+				</section>
+				
+				<section class="left">
+					<h2>Elementos de HTML</h2>
+					<ul>
+						<li class="fragment">Etiquetas neutrales</li>
+						<li class="fragment">Etiquetas semánticas</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Barra de navegación</h2>
+					<pre><code data-trim>
+&lt;div class="nav">
+	&lt;ul>
+		&lt;li>&lt;a href="#">Inicio&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#">Quienes somos&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#">Servicios&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#">Contacto&lt;/a>&lt;/li>
+	&lt;/ul>
+&lt;/div>
+					</code></pre>
+				</section>
+				
+				<section class="left">
+					<h2>Hacer semántico</h2>
+					<ul>
+						<li class="fragment">Transformar el <span class="font-mono">div</span> en un <span class="font-mono">nav</span></li>
+						<li class="fragment">Agregar <span class="font-mono">role="navigation"</span></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Atributo "<span class="font-mono">role</span>"</h2>
+					<p>Establece la semántica de un elemento.</p>
+				</section>
+				
+				<section>
+					<h2>Los elementos semánticos<span class="break" aria-hidden="true"></span> tienen roles implícitos</h2>
+					<p class="fragment">Se pueden cambiar usando <span class="font-mono">role="..."</span></p>
+				</section>
+				
+				<section>
+					<img src="img/why.gif" class="img-big" alt="Why would you do that? Friends' TV serie">
+				</section>
+				
+				<section>
+					<h2>Actually...</h2>
+				</section>
+
+				<section>
+					<h2>Porque nuestras etiquetas semánticas
+					<span class="break" aria-hidden="true"></span>
+					NO son suficientes</h2>
+				</section>
+				
+				<section>
+					<h2>A veces necesitamos usar la etiqueta incorrecta</h2>
+				</section>
+
+				<section class="left">
+					<h2>(Algunos) Roles disponibles</h2>
+					<ul>
+						<li class="fragment">navigation</li>
+						<li class="fragment">dialog</li>
+						<li class="fragment">alert</li>
+						<li class="fragment">presentation</li>
+						<li class="fragment">status</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Y muchos más!</h2>
+					<a href="https://w3c.github.io/using-aria/#aria-roles" target="_blank" rel="noopener">Roles en ARIA</a>
+				</section>
+				
+				<!--
+				<section class="incomplete left">
+					<h2>Etiquetas neutrales con roles</h2>
+					<ul>
+						<li class="fragment"><span class="font-mono">Span</span> que actúe como checkbox</li>
+						<li class="fragment"><span class="font-mono">A</span> que actúe como botón</li>
+						<li class="fragment"></li>
+						<li class="fragment"></li>
+					</ul>
+				</section>
+				
+				<section class="incomplete">
+					<h2>Debemos generar la interactividad</h2>
+					aria attributes
+				</section>
+				-->
+				
+				<section>
+					<h1>4. Mostrar / Ocultar elementos</h1>
+				</section>
+
+				<section class="left">
+					<h2>¿A quién se lo queres ocultar?</h2>
+					<ul>
+						<li>Al usuario "común"</li>
+						<li>Al usuario de SR</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Ocultar al usuario "común"</h2>
+					<pre><code data-trim>
+.sr-only{
+	border: 0;
+	clip: rect(0 0 0 0);
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Ocultar al usuario de SR</h2>
+					<pre><code data-trim class="html">
+&lt;el aria-hidden="true">...&lt;/el>
+					</code></pre>
+				</section>
+
+				<section>
+					<h1>5. Skip to content</h1>
+				</section>
+				
+				<section>
+					<h2>Skip to content</h2>
+					<pre><code data-trim class="html">
+&lt;a class="skip" href="#content">Skip to main content&lt;/a>
+
+&lt;!-- Menú Principal, logo y otros elementos del sitio -->
+
+&lt;main id="content">
+	Tu super contenido
+&lt;/main>
+					</code></pre>
+				</section>
+
+				<section class="left">
+					<h2>Skip to content</h2>
+					<ul>
+						<li>Invisible</li>
+						<li>Visual (focus)</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Invisible</h2>
+					<pre><code data-trim>
+.skip{
+	border: 0;
+	clip: rect(0 0 0 0);
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+}
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Visual</h2>
+					<pre><code data-trim>
+.skip {
+  position: absolute;
+  top: -40px;
+  left: 1em;
+  z-index: 1;
+  color: transparent;
+}
+
+.skip:focus {
+  position: absolute;
+  top: 0;
+  color: black;
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Skip to content - Visual</h2>
+					<a href="http://www.sarasoueidan.com/" target="_blank" rel="noopener">
+						<img src="img/skip1.png" alt="Sara Soueidan's website, example of skip navigation">
+					</a>
+				</section>
+
+
+
+
+
+				<section class="white" data-background-color="#ff7b00">
+					<h2>Audit</h2>
+					<p>¿Cómo está mi sitio? ¿Qué puedo mejorar?</p>
+				</section>
+				
+				<section class="left">
+					<h2>Audit</h2>
+					<ul>
+						<li><a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C HTML Validator</a></li>
+						<li><a href="https://developers.google.com/web/tools/lighthouse/" target="_blank" rel="noopener">Lighthouse</a></li>
+						<li><a href="http://wave.webaim.org/" target="_blank" rel="noopener">WAVE</a></li>
+					</ul>
+				</section>
+
+				<section class="left">
+					<h2>Veamos</h2>
+					<ul>
+						<li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN</a></li>
+						<li><a href="https://developers.google.com/" target="_blank" rel="noopener">Google Developers</a></li>
+					</ul>
+				</section>
+
+
+
+
+				<section class="white" data-background-color="#ff7b00">
+					<h2>Testing</h2>
+					<p>Igual o más importante que los audit</p>
+				</section>
+
+				<section class="left">
+					<h2>Testing</h2>
+					<ol>
+						<li>Navegación por teclado</li>
+						<li>Screen Reader</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Testing</h2>
+					<p>Navegación por teclado<sup class="sup-height fragment" aria-hidden="fragment">*</sup></p>
+				</section>
+
+				<section class="left">
+					<h2>Objetivos</h2>
+					<ul>
+						<li class="fragment">Verificar navegación, duh!</li>
+						<li class="fragment">Verificar outlines</li>
+						<li class="fragment">Eventos (enter, tab, spacebar)</li>
+						<li class="fragment">Loops infinitos de tab</li>
+					</ul>
+				</section>
+
+				<section class="left">
+					<h2>Testing</h2>
+					<ul>
+						<li class="fragment"><strong>ChromeVox</strong>: Plugin de... Chrome</li>
+						<li class="fragment"><strong>NVDA</strong>: Open source (Windows)</li>
+						<li class="fragment"><strong>VoiceOver</strong> (Mac)</li>
+						<li class="fragment"><strong>JAWS</strong>: $$$</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>ChromeVox</h2>
+					<p>Accesible y cross-platform<sup class="sup-height fragment" aria-hidden="fragment">*</sup></p>
+					<!-- Solo chrome, no es realmente utilizado a diario por no-videntes -->
+				</section>
+
+				<section class="left">
+					<h2>Objetivos</h2>
+					<ul>
+						<li class="fragment">Verificar navegación</li>
+						<li class="fragment">Verificar la ausencia de los "Click acá"</li>
+						<li class="fragment">Verificar la interactividad</li>
+						<li class="fragment">Acercarse a la experiencia típica del usuario no vidente</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Auriculares y... paciencia</h2>
+					<img src="img/headphones.jpg" alt="Headphones Required">
+				</section>
+
+				<section class="left">
+					<h2>Entonces...</h2>
+					<ul>
+						<li class="fragment">Audit</li>
+						<li class="fragment">Test</li>
+						<li class="fragment">Teamwork</li>
+						<li class="fragment">No es un afterthought</li>
+					</ul>
+				</section>
+
+				<section class="left">
+					<h2>Por último</h2>
+					<ul>
+						<li class="fragment">Baby steps</li>
+						<li class="fragment">No teman equivocarse</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Fun fact</h2>
+					<p class="fragment">¿Cómo vendo esta cosa?</p>
+				</section>
+
+				<section class="left">
+					<h2>¿Cómo ofrecemos accesibilidad?</h2>
+					<ul>
+						<li class="fragment">Ley</li>
+						<li class="fragment">RSE</li>
+						<li class="fragment">... Números</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>15% de la población mundial</h2>
+					<p>Organización Mundial de la Salud</p>
+				</section>
+
+				<section><img src="img/stats.png" alt="Browser stats from statcounter.com Chrome 54%, Safari 14%, UC Browser 7%, Firefox 6%, Opera 3% and IE 3%"></section>
+
+				<section class="left">
+					<h2>Gracias!</h2>
+					<ul>
+						<li>Slides: <a href="http://evaferreira.com.ar/a11y-ba">www.evaferreira.com.ar/a11y-ba</a></li>
+						<li>
+							Repo en <a href="https://github.com/evaferreira/accesibilidad-bafrontend" target="_blank">GitHub</a>
+						</li>
+						<li><a href="https://twitter.com/evaferreira92">@evaferreira92</a></li>
+						<li>(:</li>
+					</ul>
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				width: 1280,
+				height: 720,
+
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-43477551-1', 'evaferreira.com.ar');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		</script>
+	</body>
+</html>

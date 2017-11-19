@@ -1,2 +1,2 @@
-# accesibilidad-meetupjs
-Charla dictada en MeetupJS - Noviembre 2017
+# accesibilidad-bafrontend
+Charla dictada en BA Front-End, noviembre 2017
