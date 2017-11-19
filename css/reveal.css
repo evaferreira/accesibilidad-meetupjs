@@ -1361,9 +1361,13 @@ body {
 .main {
   height: 50vh;
   background-size: 100% 100%;
-  background-image: linear-gradient(-45deg, #EFEFEF 10%, #EFEFEF 15%, #AAA 15%, #AAA 20%, #CCC 20%, #CCC 25%, #888 25%, #888 30%, #BBB 30%, #BBB 35%, #EEE 35%, #EEE 40%, #ff7b00 40%, #ff7b00 45%, #999 45%, #999 50%, #EFEFEF 50%); }
+  background-color: beige; }
   .main h1.title {
     margin-top: 9vh; }
+  .main img.main_img.main_img {
+    max-height: 260px;
+    border: none;
+    box-shadow: none; }
 
 .reveal .white h1,
 .reveal .white h2,
