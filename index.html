@@ -235,7 +235,7 @@
 				</section>
 
 				<section>
-					<h2>Porque nuestras etiquetas semánticas
+					<h2>Nuestras etiquetas semánticas
 					<span class="break" aria-hidden="true"></span>
 					NO son suficientes</h2>
 				</section>
@@ -243,11 +243,11 @@
 				<section class="left">
 					<h2>(Algunos) Roles disponibles</h2>
 					<ul>
-						<li class="fragment">navigation</li>
-						<li class="fragment">dialog</li>
 						<li class="fragment">alert</li>
+						<li class="fragment">dialog</li>
 						<li class="fragment">presentation</li>
 						<li class="fragment">status</li>
+						<li class="fragment">tab</li>
 					</ul>
 				</section>
 
@@ -257,8 +257,7 @@
 				</section>
 				
 				<section>
-					<h2>Además...<span class="break" aria-hidden="true"></span>
-					<span class="fragment">A veces necesitamos usar la etiqueta incorrecta</span></h2>
+					<h2>Además... <span class="fragment">A veces<span class="break" aria-hidden="true"></span>necesitamos usar la etiqueta incorrecta</span></h2>
 				</section>
 
 				<section>
@@ -266,15 +265,39 @@
 					<p class="fragment">Etiquetas neutrales con roles</p>
 				</section>
 				
-				<section class="left">
+				<section>
 					<h2>Custom Controls</h2>
 					<p class="fragment"><span class="font-mono">Span</span> que actúe como checkbox</li>
 					</p>
 				</section>
-				
+
+				<section class="left">
+					<h2>Creando un checkbox</h2>
+					<ol>
+						<li class="fragment">Seleccionamos la etiqueta (<span class="font-mono">span</span>)</li>
+						<li class="fragment">La estilizamos</li>
+						<li class="fragment">Estilizamos el <span class="font-mono">checked</span> state</li>
+						<li class="fragment">Escribimos un poco de JavaScript</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Empezando</h2>
+					<pre><code data-trim class="html">
+&lt;span class="check">&lt;/span>
+					</pre></code>
+				</section>
+
+				<section class="iframe">
+					<iframe sandbox="allow-scripts" src="demos/checkbox1.html"></iframe>
+				</section>
+
 				<section class="incomplete">
 					<h2>Debemos generar la interactividad</h2>
-					aria attributes
+				</section>
+
+				<section class="incomplete">
+					aria attributes + tab + role
 				</section>
 				
 				
