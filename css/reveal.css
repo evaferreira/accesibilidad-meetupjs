@@ -1360,7 +1360,7 @@ body {
  *********************************************/
 .main h1.title.title {
   margin-top: 7vh;
-  text-transform: capitalize; }
+  text-transform: none; }
 
 .main img.main_img.main_img {
   max-height: 260px;
