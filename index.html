@@ -156,7 +156,6 @@
 					<h1>3. Trabajando</h1>
 					<ul>
 						<li class="fragment">Desarrollo</li>
-						<li class="fragment">Audit</li>
 						<li class="fragment">Testing</li>
 					</ul>
 				</section>
@@ -348,8 +347,8 @@
 				</section>
 
 				<section>
-					<h2>Aria Attributes</h2>
-					<p>Qué activamos y en qué estado está</p>
+					<h2>Aria-attributes</h2>
+					<p class="fragment">Qué activamos y en qué estado está</p>
 				</section>
 				
 				<section>
@@ -359,7 +358,7 @@
 				<section>
 					<h2>Qué activamos</h2>
 					<pre><code data-trim class="html">
-&lt;span class="check" role="checkbox" tabindex="0" aria-label="Acepto Condiciones">&lt;/span>
+&lt;span aria-label="Acepto Condiciones" [...] >&lt;/span>
 					</pre></code>
 				</section>
 				
@@ -367,36 +366,31 @@
 					<h2>En qué estado está</h2>
 				</section>
 				
-				<section class="incomplete">
-					<a href="demos/checkbox5.html" target="_blank">Demo Spacebar</a>
-				</section>
-
-
-				
-				
-
-
-
-				<section class="white" data-background-color="#ff7b00">
-					<h2>Audit</h2>
-					<p>¿Cómo está mi sitio? ¿Qué puedo mejorar?</p>
+				<section>
+					<h2>En qué estado está</h2>
+					<pre><code data-trim class="html">
+&lt;span aria-checked="true | false" [...] >&lt;/span>
+					</pre></code>
 				</section>
 				
-				<section class="left">
-					<h2>Audit</h2>
-					<ul>
-						<li><a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C HTML Validator</a></li>
-						<li><a href="https://developers.google.com/web/tools/lighthouse/" target="_blank" rel="noopener">Lighthouse</a></li>
-						<li><a href="http://wave.webaim.org/" target="_blank" rel="noopener">WAVE</a></li>
-					</ul>
+				<section>
+					<h2>Mejorar el CSS y el JS</h2>
+					<pre><code data-trim class="css">
+.check[aria-checked="true"]{
+  background-color: chocolate;
+  box-shadow: inset 0 0 2px 2px white;
+}
+					</pre></code>
+				</section>
+				
+				<section>
+					<a href="demos/checkbox5.html" target="_blank">Demo Aria-attributes</a>
 				</section>
 
-				<section class="left">
-					<h2>Veamos</h2>
-					<ul>
-						<li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN</a></li>
-						<li><a href="https://developers.google.com/" target="_blank" rel="noopener">Google Developers</a></li>
-					</ul>
+				<section><img src="img/high-five-cat.gif" alt="Gato chocando los 5"></section>
+				
+				<section>
+					<h2 aria-hidden="true">...</h2>
 				</section>
 
 
@@ -404,7 +398,6 @@
 
 				<section class="white" data-background-color="#ff7b00">
 					<h2>Testing</h2>
-					<p>Igual o más importante que los audit</p>
 				</section>
 
 				<section class="left">
@@ -464,7 +457,6 @@
 				<section class="left">
 					<h2>Entonces...</h2>
 					<ul>
-						<li class="fragment">Audit</li>
 						<li class="fragment">Test</li>
 						<li class="fragment">Teamwork</li>
 						<li class="fragment">No es un afterthought</li>
